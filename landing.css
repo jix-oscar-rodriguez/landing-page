@@ -1,0 +1,340 @@
+/* FONT OF LETTERS (google) ⬇ */    
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap');
+
+/* GENERAL ADJUSTMENTS ⬇ */
+:root{
+   /* Primary */
+
+--ios:#26bba6;
+--mac:#6174ff;
+
+/* Neutral */
+
+--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+--title:#404549;
+--paragraph:#b0b4b5
+}
+
+/* HTML SETTINGS ⬇ */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+ /* HEADER SECTION⬇  */
+ .header-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-image: url(./images/bg-header-desktop.png);
+    background-size: cover;
+    margin-bottom: 14rem;
+ }
+ .header-container img{
+    margin-top: 15rem;
+    margin-bottom: 3.4rem;
+ }
+ .header-container h1{
+    font-size: 4.5rem;
+    color: var(--title);
+ }
+ .header-container p{
+    font-size: 2.2rem;
+    max-width: 800px;
+    text-align: center;
+    color: var(--paragraph);
+ }
+ .header-container .header-links_container{
+  display: flex;
+  gap: 3rem;
+
+  }
+  .header-container .header-links_container a{
+color: white;
+padding: 1.7rem 4rem;
+border-radius: 5rem;
+font-size: 2rem;
+font-weight: bold;
+transition: .3s;
+  }
+  .header-container .header-links_container .h-ios{
+    background-color: var(--ios);
+  }
+  .header-container .header-links_container .h-mac{
+    background-color: var(--mac);
+
+  }
+  .header-links_container a:hover{
+    transform: scale(1.1);
+    transition: .3s;
+  }
+ /* BENEFICTS  ⬇  */
+ .benefits-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rem;
+ }
+ .benefits-header h1{
+    font-size: 3.8rem;
+    color: var(--title);
+    text-align: center;
+    font-weight: 600;
+ }
+
+ .benefits-header   p{
+    font-size: 2.1rem;
+    max-width: 800px;
+    text-align: center;
+    color: var(--paragraph);
+   }
+   
+/*  BENEFICTS MAC ⬇  */
+
+  .mac-grid_container{
+   display: grid;
+   grid-template-columns: 1.2fr 1fr;
+   gap: 3rem;
+  }
+  
+ 
+  .mac-grid_container .mac-img img{
+   position: relative;
+   left: -3rem;
+   width: 100%;
+   object-fit: contain;
+  }
+  
+ .mac-txt_container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 7rem;
+  }
+  .mac-txt_container .mac-txt h1{
+   font-size: 2.7rem;
+   color: var(--title);
+   margin-bottom: 2rem;
+   font-weight: 600;
+  }
+  .mac-txt_container .mac-txt p{
+   font-size: 1.8rem;
+   color: var(--paragraph);
+   width: 70%;
+  }
+
+
+   /* BENEFICTS MOBILE ⬇  */
+.b-h2{
+margin-top: 12rem;
+}
+
+.bobile-img_panel{
+   display: flex;
+   justify-content: center;
+}
+.bobile-img_panel img{
+   width: 64vw;
+}
+
+/* <!-- mobile characteristics--> */
+.characteristics-container{
+width: 80%;
+margin: 5rem auto;
+text-align: center;
+}
+.characteristics-container .header-c h1{
+   font-size: 3.8rem;
+   color: var(--title);
+   font-weight: 800;
+   margin-bottom: 2rem;
+}
+
+.characteristics-container .header-c p{
+ font-size: 1.8rem;
+ color: var(--paragraph);
+}
+.characteristics-container .characteristics-grid{
+   display: grid;
+   grid-template-columns: repeat(3, minmax(300px, 400px));
+   margin-top: 8rem;
+
+}
+.characteristics-grid .characteristics-card {
+   display: grid;
+   align-items: center;
+   justify-items: center;
+   align-content: space-evenly;
+   }
+ .characteristics-grid .characteristics-card h1{
+ font-size: 2.5rem;
+ color: var(--title);
+ margin-top: 3rem;
+ }
+
+ .characteristics-grid .characteristics-card p{
+   font-size: 1.8rem;
+   color: var(--paragraph);
+   margin-top: 3rem;
+   }
+
+ /* CONVENTIONS */
+   .conventions{
+      display: grid;
+      max-width: 1400px;
+      margin: 14rem auto 5rem auto;
+      grid-template-columns: repeat(5, minmax(100px, 150px));
+      gap: 5rem;
+      justify-items: center;
+      justify-content: center;
+   }
+     /* BENEFICTS DOWNLOAD  */
+.hc-2{
+   background: none;
+   margin-top: 8rem;
+}
+.hc-2 h1{
+   font-size: 4rem;
+}
+.hc-2 p{
+   font-size: 2rem;
+}
+
+
+footer{
+
+   background-color: #f5f6f8;
+   display: flex;
+   align-items: center;
+   padding: 3rem 12%;
+   justify-content: space-between;
+}
+.footer-left {
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   align-items: center;
+   gap: 7rem;
+}
+.footer-left  img{
+   width: 67px;
+ }
+ .footer-left  ul{
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+ }
+ .footer-left  ul li{
+   font-size: 1.8rem;
+   font-weight: 600;
+   color: var(--paragraph);
+ }
+ .footer-right{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ gap: 3rem;
+ align-items: center;
+ }
+
+@media (max-width: 444px) {
+    /* HEADER SECTION⬇  */
+    .header-container{
+      background-image: url(./images/bg-header-mobile.png);
+    }
+   .header-container h1 {
+      font-size: 3.5rem;
+      color: var(--title);
+      text-align: center;}
+
+   .header-container .header-links_container {
+      flex-direction: column;
+  }
+  .header-container .header-links_container {
+   width: 80%;
+}
+.header-container .header-links_container  a{
+   text-align: center;
+   padding: 2rem 0;
+}
+.header-container p{
+   font-size: 1.8rem;
+   width: 85%;
+}
+ /* BENEFICTS  ⬇  */
+.benefits-header h1 {
+   font-size: 2.8rem;
+   font-weight: 600;
+   margin-bottom: 3rem;
+}
+.benefits-header p {
+   font-size: 1.8rem;
+   max-width: 85%;
+}
+.header-container h1{
+   width: 90%;
+}
+
+ /* BENEFICTS  MAC ⬇  */
+.mac-grid_container{
+   display: grid;
+   grid-template-columns:  1fr;
+  }
+    .mac-grid_container .mac-img{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 2rem;
+  } 
+  .mac-grid_container .mac-img img{
+   left: 0em;
+   width: 90%;
+  }
+  .mac-txt_container .mac-txt h1,p{
+   text-align: center;
+  }
+  .mac-txt_container .mac-txt p {
+   margin: 0 auto;
+}
+
+
+   /* BENEFICTS MOBILE ⬇  */
+.bobile-img_panel img{
+   width: 90vw;
+}
+.characteristics-container .characteristics-grid{
+   grid-template-columns: 1fr;
+   gap: 5rem;
+}
+
+  /* BENEFICTS DOWNLOAD  */
+.hc-2{
+   background: none;
+   margin-top: 8rem;
+}
+ /* CONVENTIONS */
+ .conventions{
+   grid-template-columns: 1fr;
+ }
+ footer{
+   flex-direction: column;
+   gap: 4rem;
+ }
+ .footer-left{
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 2rem;
+ }
+ .footer-left ul {
+
+   align-items: center;}
+
+  
+}
